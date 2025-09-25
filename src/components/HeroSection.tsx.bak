@@ -1,0 +1,258 @@
+// Simple imports
+import { Button } from "./ui/button"
+import { ArrowRight } from "lucide-react"
+import { useNavigate } from "react-router-dom"
+
+// Main hero section
+function HeroSection() {
+  // Navigation hook
+  const navigate = useNavigate()
+
+  return (
+    <div className="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen py-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          {/* Left side content */}
+          <div className="space-y-6">
+            <div className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-lg text-sm font-medium">
+              Career Planning Platform
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Find Your Perfect
+              <span className="block text-blue-600">Career Path</span>
+            </h1>
+            
+            <p className="text-lg text-gray-600">
+              Take control of your professional future with data-driven insights and personalized guidance. 
+              Let us help you make informed career decisions.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <Button
+                onClick={() => navigate('/demo')}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg"
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+          
+          {/* Right side content */}
+          <div className="relative">
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Platform Features
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="bg-blue-100 p-1 rounded mr-3">✓</span>
+                  <span>Personalized Career Mapping</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-blue-100 p-1 rounded mr-3">✓</span>
+                  <span>Skill Gap Analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-blue-100 p-1 rounded mr-3">✓</span>
+                  <span>Market Insights</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-blue-100 p-1 rounded mr-3">✓</span>
+                  <span>Learning Recommendations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="absolute -z-10 inset-0 bg-blue-200 rounded-xl transform translate-x-4 translate-y-4"></div>
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold text-blue-600">7+</h3>
+              <p className="text-gray-600">Smart Features</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold text-blue-600">24/7</h3>
+              <p className="text-gray-600">Career Support</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold text-blue-600">100%</h3>
+              <p className="text-gray-600">Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default HeroSection
+        backgroundColor: 'rgba(0,0,0,0.4)'
+      }} />
+
+      <div style={{ position: 'relative', zIndex: 10, padding: '0 20px', maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', paddingTop: '100px' }}>
+          {/* top badge */}
+          <div style={{ 
+            display: 'inline-flex',
+            alignItems: 'center',
+            padding: '8px 16px',
+            background: 'rgba(255,255,255,0.1)',
+            borderRadius: '20px',
+            border: '1px solid rgba(255,255,255,0.2)',
+            marginBottom: '32px'
+          }}>
+            <Target style={{ width: '16px', height: '16px', marginRight: '8px', color: 'white' }} />
+            <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '14px', fontWeight: 500 }}>
+              Professional Career Intelligence Platform
+            </span>
+          </div>
+
+          {/* main heading */}
+          <h1 style={{ 
+            fontSize: '48px', 
+            fontWeight: 'bold', 
+            color: 'white',
+            marginBottom: '24px',
+            lineHeight: '1.2'
+          }}>
+            Shape Your
+            <div style={{ 
+              background: 'linear-gradient(to right, white, #a8b3cf)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>
+              Career Future
+            </div>
+          </h1>
+
+          {/* description */}
+          <p style={{ 
+            fontSize: '20px',
+            color: 'rgba(255,255,255,0.8)',
+            marginBottom: '48px',
+            lineHeight: '1.6'
+          }}>
+            Experience the future of career planning with AI-powered insights, personalized roadmaps, 
+            and real-time market intelligence. Transform your professional journey today.
+          </p>
+
+          {/* buttons */}
+          <div style={{ marginBottom: '64px' }}>
+            <Button 
+              style={{ 
+                fontSize: '18px',
+                padding: '16px 32px',
+                marginRight: '16px'
+              }}
+              onClick={() => nav('/demo')}
+            >
+              <Play style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+              Try Interactive Demo
+              <ArrowRight style={{ width: '20px', height: '20px', marginLeft: '8px' }} />
+            </Button>
+            <Button 
+              variant="outline" 
+              style={{
+                fontSize: '18px',
+                padding: '16px 32px',
+                background: 'rgba(255,255,255,0.1)',
+                color: 'white',
+                border: '1px solid rgba(255,255,255,0.3)'
+              }}
+              onClick={() => setshowVideo(true)}
+            >
+              Watch Overview
+            </Button>
+          </div>
+
+          {/* popup for video */}
+          <Dialog open={showVideo} onOpenChange={setshowVideo}>
+            <DialogContent style={{ maxWidth: '800px' }}>
+              <DialogHeader>
+                <DialogTitle>Platform Overview</DialogTitle>
+                <DialogDescription>
+                  Watch our quick overview of the Career Future platform
+                </DialogDescription>
+              </DialogHeader>
+              <div style={{ position: 'relative', paddingBottom: '56.25%' }}>
+                <iframe
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '8px'
+                  }}
+                  src="https://www.youtube.com/embed/mRT4aqyUV5Q?autoplay=1"
+                  title="Platform Overview"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          {/* showing features count */}
+          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ 
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '8px'
+              }}>
+                <Target style={{ 
+                  width: '24px', 
+                  height: '24px', 
+                  color: 'white',
+                  marginRight: '8px'
+                }} />
+                <span style={{ 
+                  fontSize: '24px',
+                  fontWeight: 'bold',
+                  color: 'white'
+                }}>7</span>
+              </div>
+              <p style={{ color: 'rgba(255,255,255,0.7)' }}>Smart Features</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* scroll indicator at bottom */}
+      <div style={{ 
+        position: 'absolute',
+        bottom: '32px',
+        left: '50%',
+        transform: 'translateX(-50%)'
+      }}>
+        <div style={{ 
+          width: '24px',
+          height: '40px',
+          border: '2px solid rgba(255,255,255,0.3)',
+          borderRadius: '20px',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <div style={{ 
+            width: '4px',
+            height: '12px',
+            backgroundColor: 'rgba(255,255,255,0.5)',
+            borderRadius: '4px',
+            marginTop: '8px'
+          }} />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// exporting the component
+export default HeroSection
