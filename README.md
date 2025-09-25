@@ -20,6 +20,3 @@ Navigating career choices can be overwhelming with the fast-changing job market 
 
 ## Who Is This For?
 Whether a fresh graduate, a mid-career professional, or a career coach, this tool empowers users to make data-driven decisions and confidently advance their careers.
-
-
-Instructions on installing, running, and contributing to the project go here...
